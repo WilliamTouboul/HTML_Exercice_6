@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mon premier formulaire</title>     
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Votre identité</legend>
+                <label for="lName">1. Nom : </label>
+                <input type="text" id="lName" name="lName" placeholder="Nom">
+                <br>
+                <label for="fName">2. Prénom : </label>
+                <input type="text" id="fName" name="fName" placeholder="Prénom">
+            </fieldset>
+            <fieldset>
+                <legend>Adresse de livraison</legend>
+                <label for="location">1. Adresse : </label>
+                <textarea id="location" name="location" placeholder="Adresse"></textarea>
+                <br>
+                <label for="zipCode">2. Code Postal :</label>
+                <input type="text" id="zipCode" name="zipCode" placeholder="Code Postal">
+                <br>
+                <label for="town">3. Ville :</label>
+                <input type="text" id="town" name="town" placeholder="Ville">
+            </fieldset>
+            <fieldset>
+                <legend>Information de réglement</legend>
+                <p>1. Carte de paiement : </p>
+                <input type="radio" id="VISA" name="card" value="VISA">
+                <label for="VISA">VISA</label><br>
+                <input type="radio" id="Mastercard" name="card" value="Mastercard">
+                <label for="Mastercard">Mastercard</label>
+                <br>
+                <label for="cardNumber">2. Numéro de carte :</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Numero de carte">
+                <br>
+                <label for="securityNumber">3. Code de securité :</label>
+                <input type="text" id="securityNumber" name="securityNumber" placeholder="Code de securité">
+                <br>
+                <label for="owner">4. Nom du titulaire : </label>
+                <input type="text" id="owner" name="owner" placeholder="Nom du titulaire">
+            </fieldset>
+            <input type="submit" value="J'achète !">
+        </form>
+    </body>
+</html>
